@@ -9,6 +9,6 @@ peripheral.find("modem", rednet.open)
 
 local client = Client.new{}
 local response = client:look_up(args[1])
-write(response)
+print(response)
 
 rednet.close()
